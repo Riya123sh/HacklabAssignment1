@@ -2,7 +2,17 @@ const red = document.querySelector('#red');
 const yellow = document.querySelector('#yellow');
 const green = document.querySelector('#green');
 
-
+function changeLights(){
+    setTimeout(() => {
+        redLight()
+    }, 0)
+    setTimeout(() => {
+        greenLight()
+    }, 20000);
+    setTimeout(() => {
+        yellowLight()
+    }, 20000);
+}
 function redLight(){
     red.classList.add('active')
     setTimeout(() => {
